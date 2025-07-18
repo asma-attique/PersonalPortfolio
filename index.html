@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asma Attique | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+
+  <!-- 🌐 Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Asma Attique</div>
+
+      <!-- Hamburger menu button -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🎯 Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Asma Attique</h1>
+      <h2>Software Engineer</h2>
+      <p style="font-size: 20px;">
+        Building efficient desktop and web applications that solve real problems. Passionate about clean code, scalable
+        systems, and continuous learning.
+      </p>
+      <a href="#projects" class="btn primary">View My Work</a>
+    </div>
+    <div class="hero-img">
+      <div class="profile-pic-wrapper">
+        <img src="attached_assets/AsmaAttiqueProfilePic.jpg" alt="Asma Attique" class="profile-pic" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 👩‍💻 About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="about-summary">
+      Software engineer with 2+ years of experience building robust applications and solving complex software
+      challenges.
+    </p>
+
+    <div class="about-content">
+      <!-- Journey -->
+      <div class="journey">
+        <h3>My Journey</h3>
+        <p>
+          I discovered my passion for software development during my time at UET Lahore, where I studied Computer
+          Engineering. What started with basic code quickly grew into a deep interest in solving complex problems
+          through technology.
+        </p>
+        <p>
+          Since becoming a Software Engineer, I’ve worked across the full stack: designing databases, writing optimized
+          SQL queries, developing robust .NET backend services, and building clean front-end interfaces.
+        </p>
+        <p>
+          Over time, I’ve become more intentional about writing clean, maintainable code. I’m especially drawn to
+          systems that are scalable, user-friendly, and built to last.
+        </p>
+        <p>
+          Outside of code, I enjoy learning modern frameworks, refining my architecture skills, or stepping outside my
+          comfort zone to take on new challenges.
+        </p>
+        <a href="attached_assets/Asma AttiqueResume.pdf" target="_blank" rel="noopener noreferrer" download
+          class="btn secondary"><i class="fas fa-download"></i> Download Resume</a>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <div class="skills-group">
+          <strong>Frontend Technologies</strong>
+          <span>WPF</span><span>WinForms</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="skills-group">
+          <strong>Backend Development</strong>
+          <span>C#</span><span>.NET Framework</span><span>.NET Core</span>
+        </div>
+        <div class="skills-group">
+          <strong>Database & ORM</strong>
+          <span>SQL Server</span><span>Entity Framework</span><span>SQL</span><span>Database Design</span>
+        </div>
+        <div class="skills-group">
+          <strong>Tools & Technologies</strong>
+          <span>Visual Studio</span><span>SVN</span><span>Jira</span><span>SDLC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧩 Projects -->
+  <section id="projects" class="section projects">
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Multi Service Appointment Manager</h3>
+        <p style="font-size: 18px;">A comprehensive web application for managing appointments across multiple services
+          and providers.
+          Built using ASP.NET Core MVC and Entity Framework Core with a SQLite database.
+          This project aims to streamline appointment booking, management, and analysis for service-based businesses.
+        </p>
+        <div class="tags"><span>ASP.NET Core MVC</span><span>SQLite</span><span>Razor
+            Views</span><span>Chart.js</span><span>Bootstrap 5</span><span>Entity Framework Core</span></div>
+        <div class="links"><a class="btn secondary" style="color: white;"
+            href="https://github.com/asma-attique/MultiServiceAppointmentManager" target="_blank"
+            rel="noopener noreferrer">Explore the Code</a></div>
+        </br>
+        <img src="images/MultiServiceAppointmentManager.jpeg" alt="Multi Service Appointment Manager" />
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Expense Tracker</h3>
+        <p style="font-size: 18px;">A simple, clean ASP.NET Core MVC web application to track your personal expenses.
+          Built using Entity Framework Core, SQLite, and Bootstrap 5 for a responsive, user-friendly design.</p>
+        <div class="tags"><span>ASP.NET Core MVC (.NET 8)</span><span>SQLite with Entity Framework
+            Core</span><span>Razor Pages</span><span>Bootstrap 5</span></div>
+        <div class="links"><a class="btn secondary" style="color: white;"
+            href="https://github.com/asma-attique/personal-expense-tracker" target="_blank"
+            rel="noopener noreferrer">Explore the Code</a></div>
+        </br>
+        <img src="images/PersonalExpenseTracker.png" alt="Personal Expense Tracker" />
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Let’s get in touch!</h2>
+      <p>I’m open to opportunities, collaborations, or just a chat. Feel free to send me a message below.</p>
+      <form id="contact-form" action="https://formsubmit.co/asma.attique.20@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+          </div>
+        </div>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- 📞 Footer -->
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>Asma Attique</h3>
+      <p>Software Engineer</p>
+    </div>
+    <div class="footer-icons">
+      <!-- LinkedIn Icon -->
+      <a href="https://www.linkedin.com/in/asmaattique20/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- Email Icon -->
+      <a href="mailto:asma.attique.20@gmail.com" target="_blank" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <!-- Location Icon (Not Clickable) -->
+      <span class="availability" aria-label="Remote Work">
+        <i class="fas fa-laptop-house"></i> Available for remote work
+      </span>
+    </div>
+
+    <!-- COPYRIGHT LINE -->
+    <div class="footer-copy">
+      <p>© 2025 Asma Attique. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
